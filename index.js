@@ -83,9 +83,9 @@ const testData = {
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-  const dataJSON = JSON.stringify(data, null, '  ');
-  fs.writeFile(`./${fileName}`, dataJSON, (() =>
+function writeToFile(fileName, stringData) {
+  // const dataJSON = JSON.stringify(data, null, '  ');
+  fs.writeFile(`./${fileName}`, stringData, (() =>
     console.log(`Data Succesfully Written to ./${fileName}`))
   );
 }
@@ -94,14 +94,17 @@ function writeToFile(fileName, data) {
 async function init() {
   let responses = await inquirer.prompt(questions);
   // responses = JSON.stringify(responses, null, '  ');
-  console.log(responses);
   const markdown = generateMarkdown(responses);
-
-  console.log(markdown);
-
-
 }
+
 
 // Function call to initialize app
 // init();
-writeToFile('README.MD', testData);
+
+// test function
+function tester(data) {
+  const markdown = generateMarkdown(data);
+  writeToFile('README.MD', markdown);
+}
+
+tester(testData);

@@ -1,13 +1,20 @@
-{
-  "projectTitle": "My Test Generator",
-  "license": "MIT",
-  "githubUser": "daveholst",
-  "toc": true,
-  "email": "dholst@glenholst.com.au",
-  "description": "This is an application for generating data.",
-  "installation": "Install using node... etc etc...",
-  "usage": "This programe is to be used bal bla",
-  "contribution": "Project is open to contribution. please raise an issue to discuss your proposed changes *before* opening a PR",
-  "tests": "The application can be tested in the following way.",
-  "questions": true
-}
+
+# My Test Generator
+
+## Table of Contents:
+* [License](#License)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [Tests](#Tests)
+* [Questions](#Questions)
+
+
+
+## License
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+This project is licensed under the **MIT License**: https://opensource.org/licenses/MIT
+      
+  
+
