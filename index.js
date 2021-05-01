@@ -1,7 +1,8 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown.js');
-const genMd = require('./utils/generateMarkdown.js')
+const fs = require('fs');
+
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -65,10 +66,29 @@ const questions = [
     message: 'Do you want to include a questions section?'
   }
 ];
+// test object
+const testData = {
+  projectTitle: 'My Test Generator',
+  license: 'MIT',
+  githubUser: 'daveholst',
+  toc: true,
+  email: 'dholst@glenholst.com.au',
+  description: 'This is an application for generating data.',
+  installation: 'Install using node... etc etc...',
+  usage: 'This programe is to be used bal bla',
+  contribution: 'Project is open to contribution. please raise an issue to discuss your proposed changes *before* opening a PR',
+  tests: 'The application can be tested in the following way.',
+  questions: true
+}
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  const dataJSON = JSON.stringify(data, null, '  ');
+  fs.writeFile(`./${fileName}`, dataJSON, (() =>
+    console.log(`Data Succesfully Written to ./${fileName}`))
+  );
+}
 
 // TODO: Create a function to initialize app
 async function init() {
@@ -78,7 +98,10 @@ async function init() {
   const markdown = generateMarkdown(responses);
 
   console.log(markdown);
+
+
 }
 
 // Function call to initialize app
-init();
+// init();
+writeToFile('README.MD', testData);
