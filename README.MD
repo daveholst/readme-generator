@@ -6,6 +6,7 @@
 * [Installation](#Installation)
 * [Usage](#Usage)
 * [Tests](#Tests)
+* [Contributing](#Contributing)
 * [Questions](#Questions)
 
 
@@ -27,10 +28,10 @@ This programe is to be used bal bla
 ## Tests
 The application can be tested in the following way.
 
-## Contribution
-Project is open to contribution. please raise an issue to discuss your proposed changes *before* opening a PR
+## 
+
 
 ## Questions
-If you have any further questions you can get in contact with the creator through the following:
+If you have any further questions you can get in contact with the creator through the following methods:
 - https://github.com/daveholst/
 - dholst@glenholst.com.au

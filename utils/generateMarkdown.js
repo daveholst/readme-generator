@@ -125,7 +125,7 @@ ${data.tests ? data.tests : ''}
 ${data.contribution ? data.contribution : ''}
 
 ## ${data.questions ? 'Questions' : ''}
-If you have any further questions you can get in contact with the creator through the following:
+If you have any further questions you can get in contact with the creator through the following methods:
 - https://github.com/${data.githubUser}/
 - ${data.email ? data.email : ''}
 `;

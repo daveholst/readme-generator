@@ -60,7 +60,7 @@ const questions = [
   },
   {
     type: 'input',
-    name: 'contribution',
+    name: 'contributing',
     message: 'How can users contribute to the project?'
   },
   {
@@ -85,7 +85,7 @@ const testData = {
   description: 'This is an application for generating data.',
   installation: 'Install using node... etc etc...',
   usage: 'This programe is to be used bal bla',
-  contribution: 'Project is open to contribution. please raise an issue to discuss your proposed changes *before* opening a PR',
+  contributing: 'Project is open to contribution. please raise an issue to discuss your proposed changes *before* opening a PR',
   tests: 'The application can be tested in the following way.',
   questions: true
 }
