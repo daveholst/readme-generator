@@ -40,11 +40,6 @@ const questions = [
   },
   {
     type: 'input',
-    name: 'email',
-    message: 'What email should users contact you on?'
-  },
-  {
-    type: 'input',
     name: 'description',
     message: 'What is the the project description?'
   },
@@ -101,19 +96,26 @@ function writeToFile(fileName, stringData) {
 
 // TODO: Create a function to initialize app
 async function init() {
-  let responses = await inquirer.prompt(questions);
-  // responses = JSON.stringify(responses, null, '  ');
-  const markdown = generateMarkdown(responses);
+  try {
+    let responses = await inquirer.prompt(questions);
+    console.log(responses);
+    const markdown = generateMarkdown(responses);
+    writeToFile('README.MD', markdown);
+  } catch (err) {
+    console.error(`Inquirer Failed with -- ${err}`)
+  }
+
+
 }
 
 
 // Function call to initialize app
-// init();
+init();
 
 // test function
-function tester(data) {
-  const markdown = generateMarkdown(data);
-  writeToFile('README.MD', markdown);
-}
+// function tester(data) {
+//   const markdown = generateMarkdown(data);
+//   writeToFile('README.MD', markdown);
+// }
 
-tester(testData);
+// tester(testData);
