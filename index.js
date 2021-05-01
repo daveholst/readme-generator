@@ -26,6 +26,14 @@ const questions = [
     },
   },
   {
+    type: 'input',
+    name: 'email',
+    message: 'What email would you like to be contacted on?',
+    filter: function (val) {
+      return val.toLowerCase();
+    },
+  },
+  {
     type: 'confirm',
     name: 'toc',
     message: 'Would you like a table of contents?'
@@ -70,6 +78,7 @@ const questions = [
 const testData = {
   projectTitle: 'My Test Generator',
   license: 'MIT',
+  email: 'dholst@glenholst.com.au',
   githubUser: 'daveholst',
   toc: true,
   email: 'dholst@glenholst.com.au',

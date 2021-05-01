@@ -18,3 +18,19 @@ This project is licensed under the **MIT License**: https://opensource.org/licen
       
   
 
+## Installation
+Install using node... etc etc...
+
+## Usage
+This programe is to be used bal bla
+
+## Tests
+The application can be tested in the following way.
+
+## Contribution
+Project is open to contribution. please raise an issue to discuss your proposed changes *before* opening a PR
+
+## Questions
+If you have any further questions you can get in contact with the creator through the following:
+- https://github.com/daveholst/
+- dholst@glenholst.com.au

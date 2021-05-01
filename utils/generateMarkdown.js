@@ -81,7 +81,7 @@ ${output}
   `
 }
 
-// function to build toc based on user preferences
+// function to build ToC based on user preferences
 function tableOfContents(data) {
   if (data.toc) {
     // create heading
@@ -102,7 +102,7 @@ function tableOfContents(data) {
   };
 }
 
-// TODO: Create a function to generate markdown for README
+//function to generate markdown for README
 function generateMarkdown(data) {
 
   return `
@@ -112,7 +112,24 @@ ${(tableOfContents(data))}
 
 ${(renderLicenseSection(data))}
 
+## ${data.installation ? 'Installation' : ''}
+${data.installation ? data.installation : ''}
+
+## ${data.usage ? 'Usage' : ''}
+${data.usage ? data.usage : ''}
+
+## ${data.tests ? 'Tests' : ''}
+${data.tests ? data.tests : ''}
+
+## ${data.contribution ? 'Contribution' : ''}
+${data.contribution ? data.contribution : ''}
+
+## ${data.questions ? 'Questions' : ''}
+If you have any further questions you can get in contact with the creator through the following:
+- https://github.com/${data.githubUser}/
+- ${data.email ? data.email : ''}
 `;
 }
 
+//export functions
 module.exports = generateMarkdown;
