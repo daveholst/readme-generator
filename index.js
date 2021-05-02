@@ -1,10 +1,10 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 const fs = require('fs');
 
 
-// TODO: Create an array of questions for user input
+// Create an array of questions for user input
 const questions = [
   {
     type: 'input',
@@ -39,17 +39,17 @@ const questions = [
     message: 'Would you like a table of contents?'
   },
   {
-    type: 'input',
+    type: 'editor',
     name: 'description',
     message: 'What is the the project description?'
   },
   {
-    type: 'input',
+    type: 'editor',
     name: 'installation',
     message: 'What are the installation notes?'
   },
   {
-    type: 'input',
+    type: 'editor',
     name: 'usage',
     message: 'How is the project to be used?'
   },
@@ -59,7 +59,7 @@ const questions = [
     message: 'How can users contribute to the project?'
   },
   {
-    type: 'input',
+    type: 'editor',
     name: 'tests',
     message: 'What are porject tests?'
   },
@@ -69,24 +69,10 @@ const questions = [
     message: 'Do you want to include a questions section?'
   }
 ];
-// test object
-const testData = {
-  projectTitle: 'My Test Generator',
-  license: 'MIT',
-  email: 'dholst@glenholst.com.au',
-  githubUser: 'daveholst',
-  toc: true,
-  email: 'dholst@glenholst.com.au',
-  description: 'This is an application for generating data.',
-  installation: 'Install using node... etc etc...',
-  usage: 'This programe is to be used bal bla',
-  contributing: 'Project is open to contribution. please raise an issue to discuss your proposed changes *before* opening a PR',
-  tests: 'The application can be tested in the following way.',
-  questions: true
-}
 
 
-// TODO: Create a function to write README file
+
+// Create a function to write README file
 function writeToFile(fileName, stringData) {
   // const dataJSON = JSON.stringify(data, null, '  ');
   fs.writeFile(`./${fileName}`, stringData, (() =>
@@ -94,7 +80,7 @@ function writeToFile(fileName, stringData) {
   );
 }
 
-// TODO: Create a function to initialize app
+// Create a function to initialize app
 async function init() {
   try {
     let responses = await inquirer.prompt(questions);
@@ -104,18 +90,8 @@ async function init() {
   } catch (err) {
     console.error(`Inquirer Failed with -- ${err}`)
   }
-
-
 }
-
 
 // Function call to initialize app
 init();
 
-// test function
-// function tester(data) {
-//   const markdown = generateMarkdown(data);
-//   writeToFile('README.MD', markdown);
-// }
-
-// tester(testData);

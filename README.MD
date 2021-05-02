@@ -1,5 +1,5 @@
 
-# My Test Generator
+# Readme Generator
 
 ## Table of Contents:
 * [License](#License)
@@ -20,13 +20,39 @@ This project is licensed under the **MIT License**: https://opensource.org/licen
   
 
 ## Installation
-Install using node... etc etc...
+The program can be installed using the following steps.
+
+1. Clone the Repo
+Navigate to appropriate directory and clone from GitHub:
+
+```bash
+git clone https://github.com/daveholst/readme-generator.git
+```
+
+2. Install Dependencies
+Navigate to where the directory has been cloned to:
+
+```bash
+cd readme-generator/
+npm install
+```
+
 
 ## Usage
-This programe is to be used bal bla
+To use the program simply run the program from your preferred terminal and follow the prompts.
+
+```bash
+npm start
+```
+
 
 ## Tests
-The application can be tested in the following way.
+To test that the software is installed and working correctly a test files has been bundled with the program. To invoke the test function type the following into your terminal.
+
+```bash
+npm test
+```
+
 
 ## 
 
