@@ -1,5 +1,10 @@
 
 # Readme Generator
+This is a program that generates appropriately formatted README.MD files for GitHub repositories. It is built around the inquirer library and takes a series of user inputs from the command line to build the readme file.
+
+This README was generated using the function.
+
+
 
 ## Table of Contents:
 * [License](#License)
@@ -36,6 +41,7 @@ Navigate to where the directory has been cloned to:
 cd readme-generator/
 npm install
 ```
+
 
 
 ## Usage

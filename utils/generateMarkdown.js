@@ -122,8 +122,8 @@ ${data.usage ? data.usage : ''}
 ## ${data.tests ? 'Tests' : ''}
 ${data.tests ? data.tests : ''}
 
-## ${data.contribution ? 'Contribution' : ''}
-${data.contribution ? data.contribution : ''}
+## ${data.contributing ? 'Contributing' : ''}
+${data.contributing ? data.contributing : ''}
 
 ## ${data.questions ? 'Questions' : ''}
 If you have any further questions you can get in contact with the creator through the following methods:
