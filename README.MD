@@ -43,7 +43,6 @@ npm install
 ```
 
 
-
 ## Usage
 To use the program simply run the program from your preferred terminal and follow the prompts.
 
@@ -60,8 +59,8 @@ npm test
 ```
 
 
-## 
-
+## Contributing
+If you wish to contribute to this project, please open an issue prior to opening a pull request so we may discuss proposed improvements. All suggestions for features encouraged! Simply open an issue on he project. 
 
 ## Questions
 If you have any further questions you can get in contact with the creator through the following methods:
